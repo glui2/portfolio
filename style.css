@@ -1,0 +1,77 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("./assets/oakbackground.jpg");
+  background-size: cover;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 2000px;
+}
+
+.card {
+  min-height: 80vh;
+  width: 35rem;
+  box-shadow: 0 20px 20px rgb(0, 0, 0, 0.2), 0 0 20px rgb(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 2rem 5rem;
+  background: white;
+  transform-style: preserve-3d;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100px;
+}
+
+.info-container {
+  margin: 2rem 0;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1.heading {
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 100;
+  margin: 1rem 0;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-links button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(217, 255, 217);
+  box-shadow: 0 3px 3px 0 rgb(0, 0, 0, 0.2);
+}
