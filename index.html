@@ -13,37 +13,89 @@
   <body>
     <div class="container">
       <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="image-container">
-              <div class="shape"></div>
-              <img src="./assets/profilepic.jpg" alt="profile picture" />
+        <div class="card-front">
+          <div class="image-container">
+            <div class="shape"></div>
+            <img src="./assets/profilepic.jpg" alt="profile picture" />
+          </div>
+          <div class="info-container">
+            <h1 class="heading">Gavin Lui</h1>
+            <p>
+              My name is Gavin and I'm passionate about web development,
+              particularly in the front-end space. I've worked on both a
+              front-end development team and a back-end development team before,
+              and have dabbled in different technologies in my own time. I'm
+              super easy to get along with and am always eager to learn
+              something new. Click the card to flip over and check out what I
+              have been working on, or get in touch with me below!
+            </p>
+            <div class="contact-icons">
+              <a href="https://github.com/glui2">
+                <img
+                  class="icon"
+                  src="./assets/icons/github.svg"
+                  alt="github"
+                />
+              </a>
+              <a href="">
+                <img
+                  class="icon"
+                  src="./assets/icons/linkedIn.svg"
+                  alt="linkedin"
+                />
+              </a>
+              <a href="mailto:gavin.lui@gmail.com">
+                <img class="icon" src="./assets/icons/gmail.svg" alt="gmail" />
+              </a>
             </div>
-            <div class="info-container">
-              <h1 class="heading">Gavin Lui</h1>
-              <p>
-                My name is Gavin and I'm passionate about web development,
-                particularly in the frontend space. I've worked on both a
-                front-end dev team and a backend dev team before, and have
-                dabbled in different technologies in my own time. Click the card
-                to flip over and check out what I have been working on, or get
-                in touch with me below!
-              </p>
-              <div class="contact-links">
-                <a href="">a</a>
-                <a href="">b</a>
-                <a href="">c</a>
-              </div>
-              <!-- <div class="project-links">
+            <!-- <div class="project-links">
             <button>Project</button>
             <button>Project</button>
             <button>Project</button>
             <button>Project</button>
           </div> -->
+          </div>
+        </div>
+        <div class="card-back">
+          <h1>Recent Projects</h1>
+          <p>
+            Here are some of the projects I have been working on recently.
+            Please check out my GitHub for more!
+          </p>
+          <div class="project-row">
+            <div class="project-description">
+              <h4>Brocolli & Co</h4>
+              <p>
+                This is a website that I developed in React for a fictional
+                company. Users can input their contact details using a form,
+                which validates and submits inputs to a mock API using Axios.
+              </p>
+            </div>
+            <div>
+              <img
+                class="project-icon"
+                src="./assets/icons/broccoli_logo.png"
+                alt="brocolli & co icon"
+              />
             </div>
           </div>
-          <div class="card-back">
-            <h1>Projects</h1>
+          <div class="project-row">
+            <div class="project-description">
+              <h4>Finzee App</h4>
+              <p>
+                I built the Finzee React app as part of the Finastra Hackathon,
+                retrieving mock data using Finastra's supplied APIs. The goal
+                was to create a centralized location where users can keep track
+                of tax-claimable transactions.
+              </p>
+            </div>
+            <div>
+              <img
+                class="project-icon"
+                src="./assets/icons/FinzeeLogo.png"
+                alt="Finzee icon"
+              />
+            </div>
           </div>
         </div>
       </div>
