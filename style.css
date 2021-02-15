@@ -32,6 +32,12 @@ body {
   transform-style: preserve-3d;
 }
 
+.card-front,
+.card-back {
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
 .image-container {
   display: flex;
   justify-content: center;
@@ -74,4 +80,8 @@ p {
   border-radius: 50px;
   background-color: rgb(217, 255, 217);
   box-shadow: 0 3px 3px 0 rgb(0, 0, 0, 0.2);
+}
+
+.card-back {
+  transform: rotateY(180deg);
 }
