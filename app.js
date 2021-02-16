@@ -23,7 +23,7 @@ card.addEventListener("click", (e) => {
 });
 
 container.addEventListener("mousemove", (e) => {
-  if (!isMoving) return;
+  if (isMoving) return;
   let xAxis = (window.innerWidth / 2 - e.pageX) / 20;
   let yAxis = (window.innerHeight / 2 - e.pageY) / 20;
   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
@@ -31,22 +31,22 @@ container.addEventListener("mousemove", (e) => {
 
 // revert animation transition to none when mouse enters container
 container.addEventListener("mouseenter", (e) => {
-  if (!isMoving) return;
+  if (isMoving) return;
   card.style.transition = "none";
 });
 
 container.addEventListener("mouseleave", (e) => {
-  if (!isMoving) return;
+  if (isMoving) return;
   card.style.transition = `all 0.5s ease`;
   card.style.transform = `rotateY(0deg) rotateX(0deg)`;
 });
 
 contactIcons.addEventListener("mouseenter", (e) => {
-  if (!isMoving) return;
+  if (isMoving) return;
   contactIcons.style.transform = `translateZ(100px)`;
 });
 
 contactIcons.addEventListener("mouseleave", (e) => {
-  if (!isMoving) return;
+  if (isMoving) return;
   contactIcons.style.transform = `translateZ(0px)`;
 });
