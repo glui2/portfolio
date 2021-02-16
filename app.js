@@ -3,6 +3,7 @@ const card = document.querySelector(".card");
 const cardFront = document.querySelector(".card-front");
 const cardBack = document.querySelector(".card-back");
 const container = document.querySelector(".container");
+const contactIcons = document.querySelector(".icon");
 var counter = 0;
 
 // card flip animation
@@ -39,4 +40,13 @@ container.addEventListener("mouseenter", (e) => {
 container.addEventListener("mouseleave", (e) => {
   card.style.transition = `all 0.5s ease`;
   card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+});
+
+contactIcons.addEventListener("mouseenter", (e) => {
+  contactIcons.style.transform = `translateZ(100px)`;
+  console.log("test");
+});
+
+contactIcons.addEventListener("mouseleave", (e) => {
+  contactIcons.style.transform = `translateZ(0px)`;
 });

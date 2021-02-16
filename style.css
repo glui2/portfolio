@@ -23,7 +23,8 @@ body {
 }
 
 .card {
-  min-height: 80vh;
+  min-height: 550px;
+  height: 80vh;
   width: 35rem;
   box-shadow: 0 20px 20px rgb(0, 0, 0, 0.2), 0 0 20px rgb(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -31,6 +32,7 @@ body {
   background: rgba(250, 250, 250, 0.9);
   transform-style: preserve-3d;
   transition: all 0.8s ease-in-out;
+  z-index: 1;
 }
 
 .card-front,
@@ -71,6 +73,7 @@ body {
 .icon {
   width: 50px;
   height: 50px;
+  transition: all 0.75s ease-out;
 }
 
 h1.heading {
