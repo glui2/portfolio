@@ -76,9 +76,9 @@ body {
   transition: all 0.75s ease-out;
 }
 
-h1.heading {
+/* h1.heading {
   text-align: center;
-}
+} */
 
 p {
   font-size: 14px;
