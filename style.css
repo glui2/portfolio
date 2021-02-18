@@ -16,15 +16,15 @@ body {
 }
 
 .container {
-  width: 50%;
+  width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .card {
-  min-height: 550px;
-  height: 80vh;
+  min-height: 500px;
+  height: 50vh;
   width: 35rem;
   box-shadow: 0 20px 20px rgb(0, 0, 0, 0.2), 0 0 20px rgb(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -43,6 +43,7 @@ body {
   left: 10%;
   width: 80%;
   height: 100%;
+  overflow: auto;
 }
 
 .image-container {
@@ -76,18 +77,23 @@ body {
   transition: all 0.75s ease-out;
 }
 
-/* h1.heading {
-  text-align: center;
-} */
+h1 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 12px;
+}
 
 p {
-  font-size: 14px;
-  font-weight: 100;
+  font-size: 10px;
+  font-weight: 200;
   margin: 1rem 0;
 }
 
 .card-back {
   transform: rotateY(180deg);
+  max-height: 90%;
 }
 
 .project-row {
@@ -102,4 +108,54 @@ p {
 
 .project-description {
   padding-right: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+  max-height: 300px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    min-height: 500px;
+    max-height: 1000px;
+    height: 80vh;
+    width: 45vh;
+    max-width: 560px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    min-height: 500px;
+    max-height: 1285px;
+    height: 80vh;
+    width: 45vh;
+    max-width: 723px;
+  }
 }
